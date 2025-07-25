@@ -1,11 +1,16 @@
-import "./Home.css"
+import './Home.css';
 
-const Home = () => {
+import Sidebar from './../../components/SIdebar/Sidebar';
+import Feed from '../../components/Feed/Feed';
+const Home = ({ sidebar }) => {
   return (
-	<div>
-	  
-	</div>
-  )
-}
+    <>
+      <Sidebar sidebar={sidebar} />
+      <div className={`container ${!sidebar ? '' : 'large-container'}`}>
+        <Feed />
+      </div>
+    </>
+  );
+};
 
-export default Home
+export default Home;
