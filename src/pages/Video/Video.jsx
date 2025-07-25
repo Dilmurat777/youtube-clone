@@ -1,11 +1,13 @@
-import "./Video.css"
+import PlayVideo from '../../components/PlayVideo/PlayVideo';
+import './Video.css';
+
 
 const Video = () => {
   return (
-	<div>
-	  
-	</div>
-  )
-}
+    <div className="play-container">
+      <PlayVideo />
+    </div>
+  );
+};
 
-export default Video
+export default Video;
