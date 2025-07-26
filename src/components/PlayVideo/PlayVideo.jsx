@@ -21,6 +21,69 @@ const PlayVideo = () => {
 				  <span><img src={save} alt="" />Save</span>
 			  </div>
 		  </div>
+		  <hr />
+		  <div className="publisher">
+			  <img src={jack} alt="" />
+			  <div>
+				  <p>Mr Dilmurat Stack</p>
+				  <span>1m Subscribers</span>
+			  </div>
+			  <button>Subscribe</button>
+		  </div>
+		  <div className="vid-description">
+			  <p>Channel that makes learning Easy</p>
+			  <p>Subscribe Mr Dilnmurat to watch more Tutorial on web development</p>
+			  <hr />
+			  <h4>130 comments</h4>
+			  <div className="comments">
+				  <img src={user_profile} alt="" />
+				  <div>
+					  <h3>Jack Nicholson <span>1 day ago</span></h3>
+					  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum architecto incidunt, quasi amet distinctio rerum quae? Fuga, voluptas nam temporibus asperiores veniam molestias. Sequi iusto corporis doloremque doloribus aut et.</p>
+					  <div className="comments-action">
+						  <img src={like} alt="" />
+						  <span>244</span>
+						  <img src={dislike} alt="" />
+					  </div>
+				  </div>
+			  </div>
+			  <div className="comments">
+				  <img src={user_profile} alt="" />
+				  <div>
+					  <h3>Jack Nicholson <span>1 day ago</span></h3>
+					  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum architecto incidunt, quasi amet distinctio rerum quae? Fuga, voluptas nam temporibus asperiores veniam molestias. Sequi iusto corporis doloremque doloribus aut et.</p>
+					  <div className="comments-action">
+						  <img src={like} alt="" />
+						  <span>244</span>
+						  <img src={dislike} alt="" />
+					  </div>
+				  </div>
+			  </div>
+			  <div className="comments">
+				  <img src={user_profile} alt="" />
+				  <div>
+					  <h3>Jack Nicholson <span>1 day ago</span></h3>
+					  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum architecto incidunt, quasi amet distinctio rerum quae? Fuga, voluptas nam temporibus asperiores veniam molestias. Sequi iusto corporis doloremque doloribus aut et.</p>
+					  <div className="comments-action">
+						  <img src={like} alt="" />
+						  <span>244</span>
+						  <img src={dislike} alt="" />
+					  </div>
+				  </div>
+			  </div>
+			  <div className="comments">
+				  <img src={user_profile} alt="" />
+				  <div>
+					  <h3>Jack Nicholson <span>1 day ago</span></h3>
+					  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum architecto incidunt, quasi amet distinctio rerum quae? Fuga, voluptas nam temporibus asperiores veniam molestias. Sequi iusto corporis doloremque doloribus aut et.</p>
+					  <div className="comments-action">
+						  <img src={like} alt="" />
+						  <span>244</span>
+						  <img src={dislike} alt="" />
+					  </div>
+				  </div>
+			  </div>
+		  </div>
 	</div>
   )
 }
