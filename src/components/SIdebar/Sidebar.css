@@ -57,3 +57,11 @@
 	width: 50%;
 	margin-bottom: 25px;
 }
+
+.sidebar .shortcut-links .active img{
+	border-bottom: 2px solid red;
+}
+
+.sidebar .shortcut-links .active p{
+	color: red;
+}
