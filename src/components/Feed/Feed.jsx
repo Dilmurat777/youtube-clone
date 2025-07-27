@@ -10,11 +10,10 @@ import thumbnail8 from '../../assets/thumbnail8.png';
 import { Link } from 'react-router-dom';
 import { API_KEY } from '../../data';
 import { useEffect, useState } from 'react';
-
+import { valueConverter } from '../../data';
+import moment from 'moment';
 const Feed = ({ category }) => {
   const [data, setData] = useState([]);
-console.log(data);
-
   const fetchData = async () => {
     const videoList_url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&videoCategoryId=${category}&key=${API_KEY}`;
 
@@ -35,7 +34,7 @@ console.log(data);
             <img src={item.snippet.thumbnails.medium.url} alt="" />
             <h2>{ item.snippet.title}</h2>
             <h3>{ item.snippet.channelTitle}</h3>
-            <p>{item.statistics.viewCount} views &bull; 2 days ago</p>
+            <p>{valueConverter(item.statistics.viewCount)} views &bull; {moment(item.snippet.publishedAt).fromNow() }</p>
           </Link>
         );
       })}
